@@ -35,11 +35,11 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items:center;
 }
 .custom-checkbox{
     position: absolute;
-    right:55px;
+    right:53px;
     bottom:22px;
 }
 .custom-checkbox input{
@@ -65,7 +65,7 @@ body{
     height: 18px;
     border-radius: 50%;
     background-color: white;
-    transition: all .25s ease-in-out;
+    transition: right .25s ease-in-out;
 }
 input:checked ~ span::after{
     /* left: 3px; */
@@ -76,12 +76,13 @@ input:checked ~ span{
     background-image: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
 }
 label{
-    margin-right:20px;
+    width: 100%;
+    flex-grow: 20;
     font-weight: 600;
     font-size: .95rem;
     color: hsl(228, 12%, 44%);
     z-index: 3;
-    padding: 0 50px 0 0;
+    padding: 0 75px 0 0;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
